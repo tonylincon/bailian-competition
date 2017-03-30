@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <!-- 指定多核浏览器用webkit模式 -->
+    <meta name="renderer" content="webkit">
+    <title>腾讯问卷 - 免费好用的问卷调查系统,调查问卷,免费,简单,模板</title>
+    <!-- 设计:三石,马克 | 前端:博,机神 | 后端:德爷,十力 | 团队博客: http://cdc.tencent.com/ -->
+    <meta name="description" content="腾讯问卷，是腾讯公司推出的免费、专业的问卷调查系统。提供多种方式创建问卷，简单高效的编辑方式，强大的逻辑设置功能，专业的数据统计和样本甄别，让您轻松开启调研工作。">
+    <meta name="keywords" content="腾讯问卷,调查问卷,问卷调查,市场调研,问卷系统,问卷,模板,免费,简单,调研,市场调查,满意度,问卷调查网,在线问卷调查,微信问卷,腾讯,tencent,qq问卷" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="/favicon.ico?v=1.2">
+    <script src="//cdn.ur.qq.com/js/lib/bowser/bowser.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        if (bowser.mobile) { location.href = location.href.replace('wj.qq.com','wj.qq.com/mobile'); }
+    </script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/pc/page_edit.css?v=1.9.39"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="stylesheets/pc/ie.css?v=1.9.39"/>
+    <![endif]-->
+
+    <script src="//js.aq.qq.com/js/aq_common.js"></script>
+</head>
+<body class="g_wrapper g_wrapper_full page_edit g_survey">
+
+    <div id="header" class="g_header">
+        <div class="wrapper">
+
+            <h1 class="logo">
+                <a href="/index.html">
+                    <img src="//cdn.ur.qq.com/image/logo.png?v=1.9.39" srcset="/image/logo@2x.png?v=1.9.39 2x" alt="腾讯问卷" />腾讯问卷
+                </a>
+            </h1>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="guide.html">创建问卷</a></li>
+                    <li class="current"><a href="mine.html">我的问卷</a></li>
+                    <li><a href="/article/category-2.html">调查资讯</a></li>
+                    <li><a href="/article/category-3.html">帮助中心</a></li>
+                </ul>
+            </div>
+
+            <div class="account">
+                <div id="login_checked" class="logged_in">
+                    <img class="avatar" alt="avatar" />
+                    <span class="name"></span>
+                    <span class="splitor">|</span>
+                    <a href="javascript:;" id="logout" class="logout">退出</a>
+                </div>
+                <div id="login_checking" class="not_logged_in">
+                    <a id="login" href="javascript:;" class="btn btn_green btn_small">登录</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="g_subheader"></div>
+
+    <div id="container" class="g_container">
+
+        <div class="survey_background_wrap" style="height: 100%; background-size: cover; background-position: 50% 50%;"></div>
+
+        <div class="editor_container">
+
+            <!-- 左边栏 -->
+            <div class="editor_sidebar"></div>
+
+            <!-- 主体 -->
+            <div class="editor_main">
+
+                <div class="survey_wrap">
+
+                    <div class="survey_pages_tab">
+
+                        <a class="pages_preview" href="javascript:;"><i></i></a>
+
+                        <!-- 滚动容器 -->
+                        <div class="pages_wrap">
+
+                            <!-- 页码容器 -->
+                            <ul></ul>
+
+                            <!-- 结束页码 -->
+                            <a class="pages_item pages_end">
+                                <span class="pages_show">结束页</span>
+                            </a>
+
+                        </div>
+
+                        <a class="pages_next" href="javascript:;"><i></i></a>
+                        <a class="pages_more" href="javascript:;" ><i></i></a>
+
+                    </div>
+
+                    <div class="survey_main">
+
+                        <div class="survey_title">
+
+                            <div class="inner">
+
+                                <h1 class="title_content"></h1>
+
+                            </div>
+
+                        </div>
+
+                        <div class="survey_prefix">
+
+                            <div class="inner">
+
+                                <div class="prefix_content"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="survey_container"></div>
+
+                        <div class="survey_suffix">
+
+                            <div class="inner">
+
+                                <div class="suffix_content"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 题库 -->
+            <div class="editor_lib">
+
+                <a class="lib_toggle_button lib_open">
+                    <i></i>
+                    <span>展开题库</span>
+                </a>
+
+                <div class="lib_title">
+                    <h3>题库</h3>
+                    <a href="javascript:;" class="lib_close">&times;</a>
+                </div>
+
+                <div class="lib_list">
+                    <dl class="lib_content"></dl>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--[if IE]>
+    <script src="//cdn.ur.qq.com/js/lib/json3/json3.min.js" type="text/javascript"></script>
+    <script src="//cdn.ur.qq.com/js/lib/es5-shim/es5-shim.min.js" type="text/javascript"></script>
+    <script src="//cdn.ur.qq.com/js/lib/localStorage/localStorage.js" type="text/javascript"></script>
+    <script src="//cdn.ur.qq.com/js/lib/console-polyfill/console-polyfill.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <script src="//xui.ptlogin2.qq.com/js/ptlogin_v1.js"></script>
+    
+    <script src="//cdn.ur.qq.com/js/app/edit/pc/main.js?1.9.39"></script>
+    <script src="//tajs.qq.com/stats?sId=36778060" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

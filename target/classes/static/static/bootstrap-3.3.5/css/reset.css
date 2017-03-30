@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*--reset--*/
+body,div,span,applet,object,iframe,img,
+font,h1,h2,h3,h4,h5,h6,p,strong,em,acronym,strong,b,u,i,del,dfn,ins,
+dl,dt,dd,ol,ul,li,
+table,caption,tbody,tfoot,thead,tr,th,td,
+input,textarea,select,a,hr,code,pre,button,
+form,fieldset,label,legend{margin:0;padding:0;background:transparent;font-family:arial,microsoft yahei,simsun;vertical-align:baseline;}
+ol,ul{list-style-type:none;margin:0;padding:0;}
+p,li {word-wrap:break-word;}
+a,a:hover{cursor:pointer;outline:0 none;text-decoration:none;}
+table{border-collapse:collapse;border-spacing:0;}
+img,input,select,label,button{vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:1em;}
+q:before,q:after{content:'';}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+img,iframe{border:none;}
+del{text-decoration:line-through;}
+input,textarea,button{outline:none;}
+/*--selection--*/
+::selection{background:#eef2fb;color:#0d1c28;}
+::-moz-selection{background:#eef2fb;color:#0d1c28;}
+::-webkit-selection{background:#eef2fb;color:#0d1c28;}
